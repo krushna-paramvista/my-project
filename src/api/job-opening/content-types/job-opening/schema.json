@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_openings",
+  "info": {
+    "singularName": "job-opening",
+    "pluralName": "job-openings",
+    "displayName": "Job opening",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Job_Description": {
+      "type": "blocks",
+      "required": true
+    },
+    "Requirements": {
+      "type": "text",
+      "required": true,
+      "minLength": 1
+    },
+    "Technical_Skills": {
+      "type": "text",
+      "required": true,
+      "minLength": 1
+    },
+    "Location": {
+      "type": "enumeration",
+      "enum": [
+        "Pune",
+        "Mumbai",
+        "Banglore",
+        "Delhi"
+      ],
+      "required": true,
+      "default": "Pune"
+    },
+    "Job_Type": {
+      "type": "enumeration",
+      "enum": [
+        "Full Time",
+        "Remote",
+        "Internships",
+        "Hybrid"
+      ],
+      "required": true,
+      "default": "Full Time"
+    },
+    "Minimum_Experience": {
+      "type": "enumeration",
+      "enum": [
+        "Exp 0-1 year",
+        "Exp 1-2 year",
+        "Exp 3-5 year"
+      ],
+      "required": true
+    }
+  }
+}

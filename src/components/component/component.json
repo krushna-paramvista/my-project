@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_component_components",
+  "info": {
+    "displayName": "component",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Hourse": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Day": {
+      "type": "string"
+    }
+  }
+}

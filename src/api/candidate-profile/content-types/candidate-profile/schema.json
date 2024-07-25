@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidate_profiles",
+  "info": {
+    "singularName": "candidate-profile",
+    "pluralName": "candidate-profiles",
+    "displayName": "Candidate profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Source_name": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "Add_source_type": {
+      "type": "enumeration",
+      "enum": [
+        "Carrer Page",
+        "Internal Referal",
+        "Vendor",
+        "Requirement Team"
+      ]
+    },
+    "First_Name": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "Last_Name": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "Email_Address": {
+      "type": "string",
+      "required": true,
+      "minLength": 4,
+      "unique": true
+    },
+    "Mobile_Number": {
+      "required": true,
+      "type": "biginteger"
+    },
+    "Current_Location": {
+      "type": "string"
+    },
+    "Experience": {
+      "type": "string"
+    },
+    "Upload_Resume": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
